@@ -16,6 +16,17 @@ body {
   background: #f6e4c7;
   display: flex;
   justify-content: center;
+  align-items: center;   /* AJOUT */
+  min-height: 100vh;     /* AJOUT */
+  min-height: 100dvh;    /* AJOUT */*
+}
+  body::before {
+  content: "";
+  position: fixed;
+  inset: -30px;
+  background: url("fond-restaurant.png.png") center / cover no-repeat;
+  filter: blur(25px);
+  z-index: -1;
 }
 
 .page {
